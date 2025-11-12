@@ -99,6 +99,11 @@ body {
   }
 }
 
+#caret-double-down {
+  width: 32px;
+  margin-bottom: 57px;
+}
+
 /* ========== AVATAR SECTION ========== */
 #avatar {
   display: flex;
