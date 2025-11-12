@@ -132,3 +132,29 @@ h1 {
   line-height: var(--text-sm-line-height);
   font-weight: var(--text-sm-weight);
 }
+
+#tags {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 94px;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: var(--gray-200);
+  font-family: var(--maven-pro);
+  font-size: var(--text-md-size);
+  line-height: var(--text-md-line-height);
+  font-weight: var(--text-md-weight);
+  border-radius: 999px;
+  background-color: var(--gray-400);
+  padding: 16px 8px;
+  height: 40px;
+}
+
+.tag img {
+  width: 24px;
+}
