@@ -57,6 +57,18 @@ Um portfolio moderno e responsivo de um desenvolvedor fullstack, desenvolvido co
 - **Inconsolata** - Subtítulos (monospace)
 - **Maven Pro** - Textos corpo
 
+## 🤖 Sobre a IA neste Projeto
+
+A inteligência artificial foi utilizada **apenas para otimizar o CSS e deixar o HTML mais semântico**. As funcionalidades, design, conteúdo e estrutura geral do portfolio foram desenvolvidos manualmente.
+
+**Otimizações realizadas:**
+
+- Consolidação de propriedades CSS redundantes
+- Implementação de variáveis CSS e BEM pattern
+- Conversão de HTML para estrutura semântica com tags apropriadas
+- Criação de classes utilitárias reutilizáveis
+- Remoção de código duplicado
+
 ## 📁 Estrutura do Projeto
 
 ```
@@ -110,6 +122,8 @@ Todas as classes seguem o padrão BEM:
 
 ```css
 .section-header /* Bloco */
+/* Bloco */
+/* Bloco */
 /* Bloco */
 .hero__container /* Elemento */
 .project-card__title; /* Elemento aninhado */
