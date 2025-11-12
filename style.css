@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Principal */
+  --red: #e3646e;
+  --purple: #bb72e9;
+  --blue: #3996db;
+  --green: #82bc4f;
+  --yellow: #eabd5f;
+
+  /* Base */
+  --gray-100: #e2e4e9;
+  --gray-200: #c0c4ce;
+  --gray-300: #878ea1;
+  --gray-400: #292c34;
+  --gray-500: #16181d;
+  --gray-600: #0d0e11;
+
+  /* Tipografia */
+  --asap: 'Asap', sans-serif;
+  --inconsolata: 'Inconsolata', monospace;
+  --maven-pro: 'Maven Pro', sans-serif;
+
+  --title-lg-size: 56px;
+  --title-lg-line-height: 120%;
+  --title-lg-weigth: Bold;
+
+  --title-md-size: 24px;
+  --title-md-line-height: 120%;
+  --title-md-weigth: Bold;
+
+  --title-sm-size: 16px;
+  --title-sm-line-height: 120%;
+  --title-sm-weigth: Bold;
+
+  --subtitle-size: 20px;
+  --subtitle-line-height: 120%;
+  --subtitle-weight: Regular;
+
+  --text-md-size: 16px;
+  --text-md-line-height: 140%;
+  --text-md-weight: Regular;
+
+  --text-sm-size: 14px;
+  --text-sm-line-height: 140%;
+  --text-sm-weight: Regular;
+}
+
+#intro {
+  background-image: url(./assets/Background_Intro.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding-top: 120px;
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 80px;
+  width: 680px;
+}
+
+#title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & p span {
+    color: var(--red);
+  }
+}
+
+#avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 112px;
+  position: relative;
+  margin-bottom: 56px;
+}
+
+#profile {
+  width: 98px;
+  border-radius: 50%;
+  padding: 2px;
+  border: 2px solid var(--red);
+}
+
+#code {
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+}
+
+#text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  color: var(--gray-200);
+  font-family: var(--inconsolata);
+  font-size: var(--subtitle-size);
+  line-height: var(--subtitle-line-height);
+  font-weight: var(--subtitle-weight);
+}
+
+h1 {
+  color: var(--gray-100);
+  font-family: var(--asap);
+  font-size: var(--title-lg-size);
+  line-height: var(--title-lg-line-height);
+  font-weight: var(--title-lg-weigth);
+}
+
+#description {
+  color: var(--gray-300);
+  font-family: var(--maven-pro);
+  font-size: var(--text-sm-size);
+  line-height: var(--text-sm-line-height);
+  font-weight: var(--text-sm-weight);
+}
