@@ -5,14 +5,14 @@
 }
 
 :root {
-  /* Principal */
+  /* Cores - Principal */
   --red: #e3646e;
   --purple: #bb72e9;
   --blue: #3996db;
   --green: #82bc4f;
   --yellow: #eabd5f;
 
-  /* Base */
+  /* Cores - Base */
   --gray-100: #e2e4e9;
   --gray-200: #c0c4ce;
   --gray-300: #878ea1;
@@ -20,36 +20,51 @@
   --gray-500: #16181d;
   --gray-600: #0d0e11;
 
-  /* Tipografia */
+  /* Fontes */
   --asap: 'Asap', sans-serif;
   --inconsolata: 'Inconsolata', monospace;
   --maven-pro: 'Maven Pro', sans-serif;
 
-  --title-lg-size: 56px;
-  --title-lg-line-height: 120%;
-  --title-lg-weigth: Bold;
+  /* Tipografia - Title Large */
+  --title-lg: bold 56px / 120% var(--asap);
 
-  --title-md-size: 24px;
-  --title-md-line-height: 120%;
-  --title-md-weigth: Bold;
+  /* Tipografia - Title Medium */
+  --title-md: bold 24px / 120% var(--asap);
 
-  --title-sm-size: 16px;
-  --title-sm-line-height: 120%;
-  --title-sm-weigth: Bold;
+  /* Tipografia - Title Small */
+  --title-sm: bold 16px / 120% var(--maven-pro);
 
-  --subtitle-size: 20px;
-  --subtitle-line-height: 120%;
-  --subtitle-weight: Regular;
+  /* Tipografia - Subtitle */
+  --subtitle: 400 20px / 120% var(--inconsolata);
 
-  --text-md-size: 16px;
-  --text-md-line-height: 140%;
-  --text-md-weight: Regular;
+  /* Tipografia - Text Medium */
+  --text-md: 400 16px / 140% var(--maven-pro);
 
-  --text-sm-size: 14px;
-  --text-sm-line-height: 140%;
-  --text-sm-weight: Regular;
+  /* Tipografia - Text Small */
+  --text-sm: 400 14px / 140% var(--maven-pro);
 }
 
+body {
+  background: url(./assets/Background_Intro.png) no-repeat;
+  background-size: cover;
+  color: var(--gray-100);
+  font-family: var(--maven-pro);
+}
+
+/* ========== UTILITIES ========== */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ========== INTRO SECTION ========== */
 #intro {
   background-image: url(./assets/Background_Intro.png);
   background-repeat: no-repeat;
@@ -78,11 +93,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   & p span {
     color: var(--red);
   }
 }
 
+/* ========== AVATAR SECTION ========== */
 #avatar {
   display: flex;
   justify-content: center;
@@ -105,34 +122,27 @@
   right: 6px;
 }
 
+/* ========== TYPOGRAPHY ========== */
 #text {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
   color: var(--gray-200);
-  font-family: var(--inconsolata);
-  font-size: var(--subtitle-size);
-  line-height: var(--subtitle-line-height);
-  font-weight: var(--subtitle-weight);
+  font: var(--subtitle);
 }
 
 h1 {
   color: var(--gray-100);
-  font-family: var(--asap);
-  font-size: var(--title-lg-size);
-  line-height: var(--title-lg-line-height);
-  font-weight: var(--title-lg-weigth);
+  font: var(--title-lg);
 }
 
 #description {
   color: var(--gray-300);
-  font-family: var(--maven-pro);
-  font-size: var(--text-sm-size);
-  line-height: var(--text-sm-line-height);
-  font-weight: var(--text-sm-weight);
+  font: var(--text-sm);
 }
 
+/* ========== TAGS SECTION ========== */
 #tags {
   display: flex;
   gap: 16px;
@@ -144,15 +154,12 @@ h1 {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  color: var(--gray-200);
-  font-family: var(--maven-pro);
-  font-size: var(--text-md-size);
-  line-height: var(--text-md-line-height);
-  font-weight: var(--text-md-weight);
-  border-radius: 999px;
-  background-color: var(--gray-400);
   padding: 16px 8px;
   height: 40px;
+  border-radius: 999px;
+  color: var(--gray-200);
+  background-color: var(--gray-400);
+  font: var(--text-md);
 }
 
 .tag img {
