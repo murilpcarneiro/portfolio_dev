@@ -7,6 +7,16 @@
       name="description"
       content="Portfolio de Murilo Carneiro - Desenvolvedor Fullstack com projetos em React, Node.js e mais."
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,8 +29,8 @@
   <body>
     <main>
       <!-- HERO SECTION -->
-      <section class="hero">
-        <article class="hero__container">
+      <section id="hero">
+        <div class="hero__container">
           <header class="hero__header">
             <figure class="avatar">
               <img
@@ -82,14 +92,14 @@
           <a href="#projects" class="cta-scroll" aria-label="Ir para projetos">
             <img src="./assets/CaretDoubleDown.svg" alt="" />
           </a>
-        </article>
+        </div>
       </section>
 
       <!-- PROJECTS SECTION -->
-      <section id="projects" class="projects">
-        <header class="projects__header">
-          <p class="projects__subtitle">Meu Trabalho</p>
-          <h2 class="projects__title">Veja os projetos em destaque</h2>
+      <section id="projects">
+        <header class="section-header">
+          <p class="section-subtitle">Meu Trabalho</p>
+          <h2 class="section-title">Veja os projetos em destaque</h2>
         </header>
         <ul class="projects__grid">
           <li class="project-card">
@@ -173,6 +183,37 @@
             </div>
           </li>
         </ul>
+      </section>
+
+      <!-- SERVICES SECTION -->
+      <section id="services">
+        <header class="section-header">
+          <p class="section-subtitle">Meus Serviços</p>
+          <h2 class="section-title">Como posso ajudar o seu negócio</h2>
+        </header>
+        <div class="services__list">
+          <div class="service__card">
+            <i class="ph ph-devices"></i>
+            <div class="service__text">
+              <h3>Websites e Aplicativos</h3>
+              <p>Desenvolvimento de Interfaces</p>
+            </div>
+          </div>
+          <div class="service__card">
+            <i class="ph ph-hard-drives"></i>
+            <div class="service__text">
+              <h3>API e banco de dados</h3>
+              <p>Criação de serviços do sistema</p>
+            </div>
+          </div>
+          <div class="service__card">
+            <i class="ph ph-infinity"></i>
+            <div class="service__text">
+              <h3>DevOps</h3>
+              <p>Gestão e infraestrutura da aplicação</p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   </body>
