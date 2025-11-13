@@ -3,6 +3,7 @@
 Um portfolio moderno e responsivo de um desenvolvedor fullstack, desenvolvido com HTML semântico, CSS otimizado e design elegante.
 
 ## Deploy
+
 - https://murilpcarneiro.github.io/portfolio_dev/
 
 ## 🎨 Características
@@ -76,9 +77,22 @@ A inteligência artificial foi utilizada **apenas para otimizar o CSS e deixar o
 
 ```
 portfolio_dev/
-├── index.html          # Estrutura HTML principal
-├── style.css          # Estilos CSS
-├── assets/            # Imagens e ícones
+├── index.html                    # Estrutura HTML principal
+├── css/                          # Arquivos CSS modularizados
+│   ├── style.css                # Arquivo principal (importa todos)
+│   ├── variables.css            # Variáveis (cores, fontes, tipografia)
+│   ├── global.css               # Estilos globais e reset
+│   ├── utilities.css            # Classes utilitárias
+│   ├── hero.css                 # Seção hero
+│   ├── avatar.css               # Avatar com badge
+│   ├── skills.css               # Lista de skills
+│   ├── cta-scroll.css           # Botão scroll
+│   ├── projects.css             # Seção de projetos
+│   ├── services.css             # Seção de serviços
+│   ├── contacts.css             # Seção de contatos
+│   ├── responsive-tablet.css    # Media queries tablet (768px)
+│   └── responsive-mobile.css    # Media queries mobile (480px)
+├── assets/                       # Imagens e ícones
 │   ├── profile.jpg
 │   ├── Code.svg
 │   ├── Background_Intro.png
@@ -92,8 +106,20 @@ portfolio_dev/
 │   ├── Node.js.svg
 │   ├── CaretDoubleDown.svg
 │   └── ArrowUpRight.svg
-└── README.md          # Este arquivo
+└── README.md                     # Este arquivo
 ```
+
+## 📦 Arquitetura CSS Modular
+
+O CSS foi organizado em **módulos separados** para melhor manutenção e escalabilidade:
+
+- **variables.css** - Centralizador de cores, fontes e tipografia
+- **global.css** - Reset CSS e estilos globais
+- **utilities.css** - Classes reutilizáveis (`.accent`, `.flex-column-center`, `.section-header`, `.grid-3-columns`)
+- **Seções** - Cada seção tem seu próprio arquivo (hero, avatar, skills, projects, services, contacts)
+- **Responsividade** - Media queries organizadas em dois arquivos (tablet e mobile)
+
+O arquivo `css/style.css` importa todos os módulos usando `@import`, permitindo uma única importação no HTML.
 
 ## 🎯 Otimizações CSS
 
@@ -124,12 +150,12 @@ portfolio_dev/
 Todas as classes seguem o padrão BEM:
 
 ```css
-.section-header /* Bloco */
+.section-header           /* Bloco */
 /* Bloco */
-/* Bloco */
-/* Bloco */
-.hero__container /* Elemento */
-.project-card__title; /* Elemento aninhado */
+.hero__container          /* Elemento */
+.project-card__title      /* Elemento aninhado */
+.service__card            /* Bloco */
+.contact__item; /* Bloco */
 ```
 
 ## ✨ Efeitos e Animações
@@ -150,14 +176,13 @@ scroll-behavior: smooth;
 **Cards de Serviços**
 
 - Cores de ícones específicas (roxo, amarelo, verde)
-- Sem animação no estado padrão
 
 **Links de Contato**
 
-- Elevação do elemento (translateY)
-- Sombra azul
+- Background color muda
 - Ícone em destaque com scale
 - Seta se move diagonalmente
+- Box-shadow azul
 
 ## 🎨 Paleta de Cores
 
@@ -226,10 +251,12 @@ code .
 
 ### Mudar Cores
 
-Edite as variáveis em `:root` no `style.css`:
+Edite as variáveis em `:root` no `css/variables.css`:
 
 ```css
 --red: #e3646e; /* Mude para sua cor */
+--blue: #3996db;
+/* ... outras cores ... */
 ```
 
 ### Adicionar/Remover Projetos
@@ -248,11 +275,21 @@ Adicione um novo `<li class="project-card">` no HTML:
 
 ### Mudar Links de Contato
 
-Edite os `href` em `.contact__item a`:
+Edite os `href` no HTML da seção contacts:
 
 ```html
-<a href="https://seu-link.com" target="_blank" rel="noopener noreferrer"></a>
+<a href="https://seu-link.com" target="_blank" rel="noopener noreferrer">
+  <i class="ph ph-seu-icone"></i>
+  <span>Seu Texto</span>
+  <img src="./assets/ArrowUpRight.svg" alt="" />
+</a>
 ```
+
+### Adicionar Novo Módulo CSS
+
+1. Crie um novo arquivo em `css/seu-modulo.css`
+2. Adicione `@import url('./seu-modulo.css');` em `css/style.css`
+3. Importe as variáveis do projeto: `@import url('./variables.css');` se necessário
 
 ## 🐛 Troubleshooting
 
