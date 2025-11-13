@@ -1,0 +1,15 @@
+/* ========== MAIN CSS FILE ========== */
+/* Import all CSS modules */
+
+@import url('./variables.css');
+@import url('./global.css');
+@import url('./utilities.css');
+@import url('./hero.css');
+@import url('./avatar.css');
+@import url('./skills.css');
+@import url('./cta-scroll.css');
+@import url('./projects.css');
+@import url('./services.css');
+@import url('./contacts.css');
+@import url('./responsive-tablet.css');
+@import url('./responsive-mobile.css');

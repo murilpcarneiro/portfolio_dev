@@ -1,0 +1,71 @@
+/* ========== CONTACT SECTION ========== */
+
+#contacts {
+  background-image: url(../assets/Background_Contacts.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 80px 16px;
+}
+
+.contact__subtitle {
+  font: var(--text-md);
+  color: var(--gray-300);
+  margin-top: 8px;
+}
+
+.contact__links {
+  margin-top: 40px;
+}
+
+.contact__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  list-style: none;
+}
+
+.contact__item {
+  width: 400px;
+}
+
+.contact__item a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
+  background-color: var(--gray-400);
+  color: var(--gray-200);
+  border-radius: 8px;
+  text-decoration: none;
+  border: 1.5px solid transparent;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.contact__item a:hover {
+  border-color: var(--blue);
+}
+
+.contact__item a:hover i {
+  color: var(--blue);
+}
+
+.contact__item a i {
+  font-size: 28px;
+  flex-shrink: 0;
+}
+
+.contact__item a span {
+  font: var(--text-md);
+  flex: 1;
+}
+
+.contact__item a img {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}

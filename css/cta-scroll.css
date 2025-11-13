@@ -1,0 +1,14 @@
+/* ========== SCROLL INDICATOR ========== */
+
+.cta-scroll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 57px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.cta-scroll img {
+  width: 32px;
+}

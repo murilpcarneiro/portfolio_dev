@@ -1,0 +1,28 @@
+/* ========== SKILLS SECTION ========== */
+
+.skills {
+  margin-bottom: 94px;
+}
+
+.skills__list {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+}
+
+.skills__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 8px;
+  height: 40px;
+  border-radius: 999px;
+  color: var(--gray-200);
+  background-color: var(--gray-400);
+  font: var(--text-md);
+}
+
+.skills__item img {
+  width: 24px;
+}

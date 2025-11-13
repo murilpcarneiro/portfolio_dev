@@ -1,0 +1,57 @@
+/* ========== RESPONSIVE - TABLET (768px e abaixo) ========== */
+
+@media (max-width: 768px) {
+  :root {
+    /* Tipografia - Title Large */
+    --title-lg: bold 40px / 120% var(--asap);
+
+    /* Tipografia - Title Medium */
+    --title-md: bold 20px / 120% var(--asap);
+  }
+
+  #hero {
+    padding-top: 80px;
+  }
+
+  .hero__header {
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  .avatar {
+    width: 100px;
+  }
+
+  .avatar__image {
+    width: 90px;
+  }
+
+  .skills__list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .projects__grid {
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  .grid-3-columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact__item {
+    width: 100%;
+  }
+
+  .section-header {
+    margin-bottom: 60px;
+    padding: 0 16px;
+  }
+
+  #projects,
+  #services,
+  #contacts {
+    padding: 60px 16px;
+  }
+}

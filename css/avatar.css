@@ -1,0 +1,23 @@
+/* ========== AVATAR SECTION ========== */
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 112px;
+  position: relative;
+  margin-bottom: 56px;
+}
+
+.avatar__image {
+  width: 98px;
+  border-radius: 50%;
+  padding: 2px;
+  border: 2px solid var(--red);
+}
+
+.avatar__badge {
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+}
