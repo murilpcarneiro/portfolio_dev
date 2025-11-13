@@ -2,6 +2,9 @@
 
 Um portfolio moderno e responsivo de um desenvolvedor fullstack, desenvolvido com HTML semântico, CSS otimizado e design elegante.
 
+## Deploy
+- https://murilpcarneiro.github.io/portfolio_dev/
+
 ## 🎨 Características
 
 - **Design Responsivo** - Otimizado para todos os tamanhos de tela
